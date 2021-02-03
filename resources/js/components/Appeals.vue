@@ -53,9 +53,9 @@
                             <button class="btn mr-6 mt-1 border-copy-button" v-if="item.type_ad === 'complete'">
                                 <span style="font-size: 10px; border-bottom: 1px solid #9b65f2">Отчет</span>
                             </button>
-                            <button class="btn mr-6 mt-1 disable-button" style="height:36px;width: 55px" v-if="item.type_ad !== 'complete'" disabled>
+<!--                            <button class="btn mr-6 mt-1 disable-button" style="height:36px;width: 55px" v-if="item.type_ad !== 'complete'" disabled>-->
 
-                            </button>
+<!--                            </button>-->
                             <button class="btn p-1 mr-2 mdi mdi-chevron-right" @click="editItem(item)" style="height:36px; width: 36px; min-width: 36px; background: #6633ff; color: #FFFFFF">
                             </button>
                             <button
@@ -77,9 +77,9 @@
                 </div>
             </div>
         </div>
-        <div class="row w-100 m-auto row-cols-1 row-cols-md-3 g-4 align-items-center justify-content-center">
+        <div class="row w-100 m-auto row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 align-items-center justify-content-center">
             <div class="col-12 col-lg-3 col-md-6 px-2" v-for="item in laravelData">
-                <div class="card p-2 my-2" style="max-width: 340px; border-radius:5px; border:0;">
+                <div class="card h-100 p-2 my-2" style="max-width: 340px; border-radius:5px; border:0;">
                     <div class="card-body">
                         <div class="row w-100  mx-auto mb-2 align-items-center justify-content-start">
                             <div class="col-10 p-0">

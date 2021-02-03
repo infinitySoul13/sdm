@@ -2619,9 +2619,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Layout",
-  props: ['title']
+  props: ['title', 'info']
 });
 
 /***/ }),
@@ -39217,14 +39220,6 @@ var render = function() {
                               )
                             : _vm._e(),
                           _vm._v(" "),
-                          item.type_ad !== "complete"
-                            ? _c("button", {
-                                staticClass: "btn mr-6 mt-1 disable-button",
-                                staticStyle: { height: "36px", width: "55px" },
-                                attrs: { disabled: "" }
-                              })
-                            : _vm._e(),
-                          _vm._v(" "),
                           _c("button", {
                             staticClass: "btn p-1 mr-2 mdi mdi-chevron-right",
                             staticStyle: {
@@ -39288,14 +39283,14 @@ var render = function() {
       "div",
       {
         staticClass:
-          "row w-100 m-auto row-cols-1 row-cols-md-3 g-4 align-items-center justify-content-center"
+          "row w-100 m-auto row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 align-items-center justify-content-center"
       },
       _vm._l(_vm.laravelData, function(item) {
         return _c("div", { staticClass: "col-12 col-lg-3 col-md-6 px-2" }, [
           _c(
             "div",
             {
-              staticClass: "card p-2 my-2",
+              staticClass: "card h-100 p-2 my-2",
               staticStyle: {
                 "max-width": "340px",
                 "border-radius": "5px",
@@ -39631,15 +39626,31 @@ var render = function() {
         [
           _c("div", { staticClass: "col-12 col-md-6" }, [
             _c(
-              "h3",
+              "div",
               {
-                staticStyle: {
-                  "font-weight": "700",
-                  "font-size": "32px",
-                  "font-family": "Montserrat"
-                }
+                staticClass:
+                  "row w-100 mx-auto justify-content-start align-items-center"
               },
-              [_vm._v(_vm._s(_vm.title))]
+              [
+                _c(
+                  "h3",
+                  {
+                    staticStyle: {
+                      "font-weight": "700",
+                      "font-size": "32px",
+                      "font-family": "Montserrat"
+                    }
+                  },
+                  [_vm._v(_vm._s(_vm.title))]
+                ),
+                _vm._v(" "),
+                _vm.info
+                  ? _c("span", {
+                      staticClass: "ml-1 mb-1 mdi mdi-information",
+                      staticStyle: { color: "#7224f2", "font-size": "18px" }
+                    })
+                  : _vm._e()
+              ]
             )
           ]),
           _vm._v(" "),

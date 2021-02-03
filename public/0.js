@@ -234,6 +234,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "AppealsPage"
 });
@@ -308,7 +311,7 @@ var render = function() {
     "div",
     [
       _c("layout", {
-        attrs: { title: "Обращения" },
+        attrs: { title: "Обращения", info: "true" },
         scopedSlots: _vm._u([
           {
             key: "menu",
@@ -321,7 +324,7 @@ var render = function() {
                       "row w-100 m-auto justify-content-end align-items-center"
                   },
                   [
-                    _c("div", { staticClass: "col-12 col-md-6" }, [
+                    _c("div", { staticClass: "col-12 col-md-6 col-lg-9" }, [
                       _c(
                         "ol",
                         {
@@ -358,10 +361,11 @@ var render = function() {
                               "a",
                               {
                                 staticStyle: {
-                                  "border-bottom": "1px solid #7224f2",
+                                  "border-bottom": "3px solid #7224f2",
                                   color: "black",
                                   "text-decoration": "none",
-                                  "font-weight": "500"
+                                  "font-weight": "500",
+                                  padding: "15px 0px"
                                 },
                                 attrs: { href: "#" }
                               },
@@ -372,103 +376,98 @@ var render = function() {
                       )
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "col-12 col-md-6" }, [
+                    _c("div", { staticClass: "col-12 col-md-6 col-lg-3" }, [
                       _c(
                         "div",
-                        { staticClass: "row w-100 m-auto justify-content-end" },
+                        {
+                          staticClass:
+                            "row w-100 my-2 mx-auto justify-content-end"
+                        },
                         [
-                          _c(
-                            "div",
-                            {
-                              staticClass: "dropdown w-100",
-                              staticStyle: { "max-width": "220px" }
-                            },
-                            [
-                              _c(
-                                "button",
-                                {
-                                  staticClass: "btn w-100 dropdown-select",
-                                  staticStyle: {
-                                    padding: ".375rem 1.75rem .375rem .75rem",
-                                    "font-size": "11px",
-                                    "font-weight": "500",
-                                    border: "1px solid rgb(223, 227, 231)"
+                          _c("div", { staticClass: "dropdown w-100" }, [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "btn w-100 dropdown-select",
+                                staticStyle: {
+                                  padding: ".375rem 1.75rem .375rem .75rem",
+                                  "font-size": "11px",
+                                  "font-weight": "500",
+                                  border: "1px solid rgb(223, 227, 231)"
+                                },
+                                attrs: {
+                                  type: "button",
+                                  id: "dropdownMenu",
+                                  "data-bs-toggle": "dropdown",
+                                  "aria-expanded": "false"
+                                }
+                              },
+                              [
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "row w-100 m-auto align-items-center"
                                   },
-                                  attrs: {
-                                    type: "button",
-                                    id: "dropdownMenu",
-                                    "data-bs-toggle": "dropdown",
-                                    "aria-expanded": "false"
-                                  }
-                                },
-                                [
+                                  [
+                                    _c("span", [_vm._v("Петров Николай")]),
+                                    _vm._v(" "),
+                                    _c("span", {
+                                      staticClass: "ml-3 mdi mdi-chevron-down",
+                                      staticStyle: {
+                                        color: "rgb(108, 24, 241)",
+                                        "font-size": "18px",
+                                        position: "absolute",
+                                        right: "5px"
+                                      }
+                                    })
+                                  ]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "ul",
+                              {
+                                staticClass: "dropdown-menu",
+                                attrs: { "aria-labelledby": "dropdownMenu" }
+                              },
+                              [
+                                _c("li", [
                                   _c(
-                                    "div",
+                                    "a",
                                     {
-                                      staticClass:
-                                        "row w-100 m-auto align-items-center"
+                                      staticClass: "dropdown-item",
+                                      attrs: { href: "#" }
                                     },
-                                    [
-                                      _c("span", [_vm._v("Петров Николай")]),
-                                      _vm._v(" "),
-                                      _c("span", {
-                                        staticClass:
-                                          "ml-3 mdi mdi-chevron-down",
-                                        staticStyle: {
-                                          color: "rgb(108, 24, 241)",
-                                          "font-size": "18px",
-                                          position: "absolute",
-                                          right: "5px"
-                                        }
-                                      })
-                                    ]
+                                    [_vm._v("Action")]
                                   )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "ul",
-                                {
-                                  staticClass: "dropdown-menu",
-                                  attrs: { "aria-labelledby": "dropdownMenu" }
-                                },
-                                [
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "dropdown-item",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Action")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "dropdown-item",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Another action")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("li", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "dropdown-item",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Something else here")]
-                                    )
-                                  ])
-                                ]
-                              )
-                            ]
-                          )
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "dropdown-item",
+                                      attrs: { href: "#" }
+                                    },
+                                    [_vm._v("Another action")]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "dropdown-item",
+                                      attrs: { href: "#" }
+                                    },
+                                    [_vm._v("Something else here")]
+                                  )
+                                ])
+                              ]
+                            )
+                          ])
                         ]
                       )
                     ]),
@@ -688,7 +687,8 @@ var render = function() {
                                 background: "transparent",
                                 color: "black",
                                 "font-weight": "500",
-                                "font-size": "12px"
+                                "font-size": "12px",
+                                "border-color": "#dfe1ee"
                               },
                               attrs: { placeholder: "Все" }
                             })
@@ -715,14 +715,11 @@ var render = function() {
                                 staticStyle: {
                                   color: "black",
                                   "font-weight": "500",
-                                  "font-size": "12px"
+                                  "font-size": "12px",
+                                  "border-color": "#dfe1ee"
                                 }
                               },
                               [
-                                _c("span", {
-                                  staticClass: "mdi mdi-chevron-down"
-                                }),
-                                _vm._v(" "),
                                 _c(
                                   "option",
                                   {
@@ -750,10 +747,11 @@ var render = function() {
                             _c("div", { staticClass: "dropdown mt-3" }, [
                               _c("button", {
                                 staticClass:
-                                  "btn btn-outline-secondary dropdown-toggle mdi mdi-dots-horizontal",
+                                  "btn dropdown-toggle mdi mdi-dots-horizontal",
                                 staticStyle: {
                                   color: "#6633ff",
-                                  padding: "0.175rem 0.95rem"
+                                  padding: "0.175rem 0.95rem",
+                                  "border-color": "#dfe1ee"
                                 },
                                 attrs: {
                                   type: "button",
@@ -833,7 +831,8 @@ var render = function() {
                           staticStyle: {
                             color: "black",
                             "font-weight": "500",
-                            "font-size": "12px"
+                            "font-size": "12px",
+                            "border-color": "#dfe1ee"
                           }
                         },
                         [
@@ -861,30 +860,44 @@ var render = function() {
                         "div",
                         {
                           staticClass:
-                            "row w-100 mx-auto mt-3 align-items-center justify-content-end"
+                            "row w-100 mx-auto align-items-end justify-content-end"
                         },
                         [
-                          _c("button", {
-                            staticClass:
-                              "btn p-1 mr-2 mdi mdi-view-sequential btn-outline-secondary",
-                            staticStyle: {
-                              height: "36px",
-                              width: "36px",
-                              "min-width": "36px",
-                              color: "#6633ff"
-                            }
-                          }),
+                          _c("div", [
+                            _c(
+                              "p",
+                              {
+                                staticClass: "mb-1 d-flex",
+                                staticStyle: {
+                                  "font-size": "9px",
+                                  color: "#959597",
+                                  "font-weight": "400"
+                                }
+                              },
+                              [_vm._v("вид")]
+                            ),
+                            _vm._v(" "),
+                            _c("button", {
+                              staticClass:
+                                "btn p-1 mr-2 mdi mdi-view-sequential",
+                              staticStyle: {
+                                height: "36px",
+                                width: "36px",
+                                "min-width": "36px",
+                                color: "#6633ff",
+                                "border-color": "#dfe1ee"
+                              }
+                            })
+                          ]),
                           _vm._v(" "),
                           _c("button", {
-                            staticClass:
-                              "btn p-1 mr-2 mdi mdi-apps btn-outline-secondary",
+                            staticClass: "btn p-1 mr-2 mdi mdi-apps",
                             staticStyle: {
                               height: "36px",
                               width: "36px",
                               "min-width": "36px",
                               color: "#6633ff",
-                              "font-size": "24px",
-                              "line-height": "1rem"
+                              "border-color": "#dfe1ee"
                             }
                           })
                         ]

@@ -1,9 +1,9 @@
 <template>
     <div>
-        <layout title="Обращения">
+        <layout title="Обращения" info="true">
             <template v-slot:menu>
                 <div class="row w-100 m-auto justify-content-end align-items-center">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 col-lg-9">
                         <ol class="breadcrumb m-0 align-items-center" style="background-color: transparent">
                             <li class="">
                                 <a href="#" style="color: #9d9ea5; text-decoration: none">Панель управления</a>
@@ -12,13 +12,13 @@
                                 <div class="mx-3 mdi mdi-dots-horizontal" style="color: rgb(157, 158, 165);font-size: 17px;"></div>
                             </li>
                             <li class="" aria-current="page">
-                                <a href="#" style="border-bottom: 1px solid #7224f2; color: black; text-decoration: none; font-weight: 500">Обращения</a>
+                                <a href="#" style="border-bottom: 3px solid #7224f2; color: black; text-decoration: none; font-weight: 500; padding: 15px 0px">Обращения</a>
                             </li>
                         </ol>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="row w-100 m-auto justify-content-end">
-                            <div class="dropdown w-100" style="max-width: 220px">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="row w-100 my-2 mx-auto justify-content-end">
+                            <div class="dropdown w-100" style="">
                                 <button
                                     class="btn w-100 dropdown-select"
                                     style="padding: .375rem 1.75rem .375rem .75rem; font-size: 11px; font-weight: 500; border: 1px solid rgb(223, 227, 231);"
@@ -80,12 +80,11 @@
                         <div class="row w-100 mx-auto my-2 align-items-center justify-content-center">
                             <div class="col-6 pl-0 pr-2">
                                 <p class="mb-1 d-flex"  style="font-size: 9px; color: #959597; font-weight: 400">поиск по рубежу</p>
-                                <input class="form-control" placeholder="Все" style="background: transparent;color: black; font-weight: 500; font-size: 12px"/>
+                                <input class="form-control" placeholder="Все" style="background: transparent;color: black; font-weight: 500; font-size: 12px;border-color: #dfe1ee"/>
                             </div>
                             <div class="col-4  pl-0 pr-2">
                                 <p class="mb-1 d-flex"  style="font-size: 9px; color: #959597; font-weight: 400">проблема</p>
-                                <select class="form-select" style="color: black; font-weight: 500; font-size: 12px">
-                                    <span class="mdi mdi-chevron-down"></span>
+                                <select class="form-select" style="color: black; font-weight: 500; font-size: 12px; border-color: #dfe1ee">
                                     <option value="" disabled selected>Все</option>
                                     <option>Первый</option>
                                     <option>Второй</option>
@@ -96,8 +95,8 @@
                             <div class="col-2 p-0">
                                 <div class="dropdown mt-3">
                                     <button
-                                        class="btn btn-outline-secondary dropdown-toggle mdi mdi-dots-horizontal"
-                                        style="color: #6633ff; padding: 0.175rem 0.95rem"
+                                        class="btn dropdown-toggle mdi mdi-dots-horizontal"
+                                        style="color: #6633ff; padding: 0.175rem 0.95rem; border-color: #dfe1ee"
                                         type="button"
                                         id="dropdownMenuButton"
                                         data-bs-toggle="dropdown"
@@ -117,7 +116,7 @@
                     </div>
                     <div class="col-8 col-md-2 p-0">
                         <p class="mb-1 d-flex"  style="font-size: 9px; color: #959597; font-weight: 400">сначало показать</p>
-                        <select class="form-select" style="color: black; font-weight: 500; font-size: 12px">
+                        <select class="form-select" style="color: black; font-weight: 500; font-size: 12px;border-color: #dfe1ee">
                             <option value="" disabled selected>Актуальные</option>
                             <option>Первый</option>
                             <option>Второй</option>
@@ -126,14 +125,18 @@
                         </select>
                     </div>
                     <div class="col-4 col-md-1 p-0">
-                        <div class="row w-100 mx-auto mt-3 align-items-center justify-content-end">
-                            <button class="btn p-1 mr-2 mdi mdi-view-sequential btn-outline-secondary"
-                                    style="height:36px; width: 36px; min-width: 36px; color: #6633ff"
-                            >
-                            </button>
+                        <div class="row w-100 mx-auto align-items-end justify-content-end">
+                            <div>
+                                <p class="mb-1 d-flex" style="font-size: 9px; color: #959597; font-weight: 400">вид</p>
+                                <button class="btn p-1 mr-2 mdi mdi-view-sequential"
+                                        style="height:36px; width: 36px; min-width: 36px; color: #6633ff;border-color: #dfe1ee"
+                                >
+                                </button>
+                            </div>
+
                             <button
-                                class="btn p-1 mr-2 mdi mdi-apps btn-outline-secondary"
-                                style="height:36px; width: 36px; min-width: 36px; color: #6633ff; font-size: 24px; line-height: 1rem"
+                                class="btn p-1 mr-2 mdi mdi-apps"
+                                style="height:36px; width: 36px; min-width: 36px; color: #6633ff; border-color: #dfe1ee"
                             >
                             </button>
                         </div>
